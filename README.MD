@@ -1,6 +1,6 @@
 # СТРОИТЕЛЬНЫЙ МАГАЗИН ``"W.O.O.D.S. YSL73NGG"``
 
-<img src = "https://psv4.userapi.com/c909218/u390104600/docs/d57/870ed300ca6a/LOGO.png?extra=0sQdTfA6NAgcTOzC_JecgPur7sbYjqR6ekiQVYLGV79ctMGLSts5ePyxaV-6lCnGW6Uf6Ec_dSqbEc63sO2UgsLiGMOnv6RSD4Pdj1wIsRw_Qpmog6ukZxeEZ55S8tmUiHvOMLfI1GhUBfelSR3ye6OA6g"  width = "1000">
+<img src = "https://sun9-27.userapi.com/impg/b5I_EKVr_528mQR5XSnBGp5Nw8wouzz_w-Shlw/YSv3c3Z-lZY.jpg?size=756x720&quality=96&sign=a81c620f3ec035ad4063d8655d813163&type=album"  width = "900">
 
 ## Реализованный функционал формы "W.O.O.D.S. YSL73NGG"
 
