@@ -1,5 +1,7 @@
 # СТРОИТЕЛЬНЫЙ МАГАЗИН ``"W.O.O.D.S. YSL73NGG"``
 
+<img src = "https://sun9-27.userapi.com/impg/b5I_EKVr_528mQR5XSnBGp5Nw8wouzz_w-Shlw/YSv3c3Z-lZY.jpg?size=756x720&quality=96&sign=a81c620f3ec035ad4063d8655d813163&type=album"  width = "350">
+
 ## Реализованный функционал формы "W.O.O.D.S. YSL73NGG"
 
 ### Обязательный функционал:
