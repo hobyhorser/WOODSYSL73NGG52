@@ -14,9 +14,10 @@
         <TextBox Name="Password" Canvas.Left="333" Canvas.Top="228" HorizontalAlignment="Center" VerticalAlignment="Top" Width="159" Height="29" />
 
         <Button x:Name="Vhod" Content="Вход" FontSize="30" Background="#FFFDD0AA" BorderThickness="0" Canvas.Left="366" Canvas.Top="300" Click="Vhod_Click" FontWeight="Bold"  />
-        <Button x:Name="Registr" Content="Регистрация" FontSize="20" Background="#FFFDD0AA" BorderThickness="0" Canvas.Left="342" Canvas.Top="367" FontWeight="Bold"/>
+        <Button x:Name="Registr" Content="Регистрация" FontSize="20" Background="#FFFDD0AA" BorderThickness="0" Canvas.Left="342" Canvas.Top="367" FontWeight="Bold" Click="Registr_Click"/>
 
         <Image Source="\image\LOGO.png" Width="280" HorizontalAlignment="Left" Canvas.Left="510" VerticalAlignment="Center" Height="323"/>
+        <Frame Name="MainFrame" Height="484" Width="850" />
 
     </Canvas>
 </Window>

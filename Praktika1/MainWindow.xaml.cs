@@ -27,7 +27,12 @@ namespace Praktika1
 
         private void Vhod_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
 
+        private void Registr_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Page1());
         }
     }
 }
