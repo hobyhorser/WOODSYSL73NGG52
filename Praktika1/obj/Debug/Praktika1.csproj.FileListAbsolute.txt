@@ -32,3 +32,6 @@ C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Praktika1.exe
 C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Praktika1.pdb
 C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Page1.g.cs
 C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Page1.baml
+C:\Users\student\Desktop\ahahah\Praktika1\bin\Debug\Database1.mdf
+C:\Users\student\Desktop\ahahah\Praktika1\bin\Debug\Database1_log.ldf
+C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Praktika1_Content.g.cs

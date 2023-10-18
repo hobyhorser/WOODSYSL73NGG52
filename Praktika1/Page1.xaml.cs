@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Praktika1
 {
@@ -20,9 +23,29 @@ namespace Praktika1
     /// </summary>
     public partial class Page1 : Page
     {
+        private string connectionString = ConfigurationManager.ConnectionStrings["IVP"].ConnectionString;
+
+        private SqlConnection connection = null;
         public Page1()
         {
             InitializeComponent();
+        }
+
+        private void Registr_Click(object sender, RoutedEventArgs e)
+        {
+            if (Password.Text == Password2.Text)
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string command = $"insert into [Table] (login,password) values (N'{Login.Text}','{Password.Text}')";
+
+                SqlDataReader sqlDataReader = null;
+                SqlCommand cmd = new SqlCommand(command, connection);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Вы успешно зарегистрированы!");
+            }
+            else MessageBox.Show("Пароли не совпадают");
+           
         }
     }
 }

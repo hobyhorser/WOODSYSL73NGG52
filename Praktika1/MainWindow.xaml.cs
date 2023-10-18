@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Praktika1
 {
@@ -20,6 +23,9 @@ namespace Praktika1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string connectionString = ConfigurationManager.ConnectionStrings["IVP"].ConnectionString;
+
+        private SqlConnection connection = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +33,21 @@ namespace Praktika1
 
         private void Vhod_Click(object sender, RoutedEventArgs e)
         {
-           
+            connection = new SqlConnection(connectionString);
+            connection.Open();
+            string command = $"select * from [Table]";
+
+            
+            SqlCommand cmd = new SqlCommand(command, connection);
+            SqlDataReader sqlDataReader = cmd.ExecuteReader();
+
+            while (sqlDataReader.Read())
+            {
+                if (sqlDataReader[1].ToString() == Login.Text && sqlDataReader[2].ToString() == Password.Text)
+                {
+                    MessageBox.Show($"Вы вошли в аккаунт {sqlDataReader[1]}");
+                }
+            } 
         }
 
         private void Registr_Click(object sender, RoutedEventArgs e)
