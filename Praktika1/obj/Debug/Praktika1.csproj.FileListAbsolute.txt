@@ -35,3 +35,5 @@ C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Page1.baml
 C:\Users\student\Desktop\ahahah\Praktika1\bin\Debug\Database1.mdf
 C:\Users\student\Desktop\ahahah\Praktika1\bin\Debug\Database1_log.ldf
 C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Praktika1_Content.g.cs
+C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Balenci.g.cs
+C:\Users\student\Desktop\ahahah\Praktika1\obj\Debug\Balenci.baml

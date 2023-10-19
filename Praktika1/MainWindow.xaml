@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Praktika1"
         mc:Ignorable="d"
-        Title="Авторизация" Height="500" Width="850" Background="#FFFDD0AA" FontFamily="Century Gothic"  >
+        Title="Авторизация" Height="600" Width="900" Background="#FFFDD0AA" FontFamily="Century Gothic"  >
     <Canvas>
         <TextBlock Text="Логин" FontSize="30" Canvas.Left="222" Canvas.Top="143" FontWeight="Bold"/>
         <TextBox Name="Login" Canvas.Left="333" Canvas.Top="154" HorizontalAlignment="Center" VerticalAlignment="Top" Width="159" Height="29" />

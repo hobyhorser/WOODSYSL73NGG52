@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Praktika1"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="550" d:DesignWidth="800"
           Title="Регистрация" Height="500" Width="850"  Background="#FFFDD0AA" FontFamily="Century Gothic" >
     <Canvas>
         <TextBlock Text="Логин" FontSize="30" Canvas.Left="222" Canvas.Top="143" FontWeight="Bold"/>
@@ -19,5 +19,6 @@
 
         <Image Source="\image\LOGO.png" Width="280" HorizontalAlignment="Left" Canvas.Left="510" VerticalAlignment="Center" Height="323"/>
         <Button x:Name="Registr" Content="Регистрация" FontSize="30"  Background="#FFFDD0AA" BorderThickness="0" Canvas.Left="308" Canvas.Top="325" FontWeight="Bold" Click="Registr_Click"/>
+        <Frame Name="MainFrame" Height="484" Width="850" />
     </Canvas>
 </Page>

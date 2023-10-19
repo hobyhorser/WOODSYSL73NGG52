@@ -29,30 +29,37 @@ namespace Praktika1
         public MainWindow()
         {
             InitializeComponent();
+            manager.MainFrame = MainFrame;
         }
 
         private void Vhod_Click(object sender, RoutedEventArgs e)
         {
-            connection = new SqlConnection(connectionString);
-            connection.Open();
-            string command = $"select * from [Table]";
-
-            
-            SqlCommand cmd = new SqlCommand(command, connection);
-            SqlDataReader sqlDataReader = cmd.ExecuteReader();
-
-            while (sqlDataReader.Read())
+            if (Login.Text != "" && Password.Text != "")
             {
-                if (sqlDataReader[1].ToString() == Login.Text && sqlDataReader[2].ToString() == Password.Text)
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string command = $"select * from [Table]";
+
+
+                SqlCommand cmd = new SqlCommand(command, connection);
+                SqlDataReader sqlDataReader = cmd.ExecuteReader();
+
+                while (sqlDataReader.Read())
                 {
-                    MessageBox.Show($"Вы вошли в аккаунт {sqlDataReader[1]}");
+                    if (sqlDataReader[1].ToString() == Login.Text && sqlDataReader[2].ToString() == Password.Text)
+                    {
+                        MessageBox.Show($"Вы вошли в аккаунт {sqlDataReader[1]} :3");
+                        manager.MainFrame.Navigate(new Balenci());
+                    }
                 }
-            } 
+            }
+            else MessageBox.Show("Ты лох еп на, введи что-нибудь! 0_0 ");
+           
         }
 
         private void Registr_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Page1());
+            manager.MainFrame.Navigate(new Page1());
         }
     }
 }

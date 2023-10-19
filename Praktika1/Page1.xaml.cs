@@ -43,6 +43,9 @@ namespace Praktika1
                 SqlCommand cmd = new SqlCommand(command, connection);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Вы успешно зарегистрированы!");
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                
             }
             else MessageBox.Show("Пароли не совпадают");
            
